@@ -2,6 +2,7 @@ import { Document } from 'mongoose';
 
 export interface Opportunity extends Document {
   date: Date;
+  totalValue: number;
   items: Array<Item>;
 }
 

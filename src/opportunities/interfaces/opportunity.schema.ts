@@ -3,6 +3,7 @@ import * as mongoose from 'mongoose';
 export const OpportunitySchema = new mongoose.Schema(
   {
     date: Date,
+    totalValue: Number,
     items: [
       {
         pipedriveId: Number,

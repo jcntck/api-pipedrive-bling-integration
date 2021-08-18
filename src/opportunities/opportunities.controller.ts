@@ -1,12 +1,17 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get, Put } from '@nestjs/common';
 import { OpportunitiesService } from './opportunities.service';
 
 @Controller('api/v1/opportunities')
 export class OpportunitiesController {
   constructor(private readonly opportunitiesService: OpportunitiesService) {}
 
-  @Get('test')
-  async test(): Promise<any> {
-    return await this.opportunitiesService.createOpportunity();
+  @Get()
+  async getOpportunities() {
+    return await this.opportunitiesService.getOpportunities();
+  }
+
+  @Put()
+  async updateOpportunities(): Promise<void> {
+    await this.opportunitiesService.updateOpportunities();
   }
 }

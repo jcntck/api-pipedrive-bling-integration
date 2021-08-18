@@ -3,6 +3,7 @@ import { ConfigModule } from '@nestjs/config';
 import { PipedriveModule } from './pipedrive/pipedrive.module';
 import { OpportunitiesModule } from './opportunities/opportunities.module';
 import { MongooseModule } from '@nestjs/mongoose';
+import { BlingModule } from './bling/bling.module';
 
 @Module({
   imports: [
@@ -18,6 +19,7 @@ import { MongooseModule } from '@nestjs/mongoose';
     ConfigModule.forRoot(),
     PipedriveModule,
     OpportunitiesModule,
+    BlingModule,
   ],
   controllers: [],
   providers: [],
