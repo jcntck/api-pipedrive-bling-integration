@@ -2,9 +2,8 @@
 <a  href="http://nestjs.com/"  target="blank"><img  src="https://nestjs.com/img/logo_text.svg"  width="320"  alt="Nest Logo"  /></a>
 </p>
 
-[circleci-image]:  https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
-
-[circleci-url]:  https://circleci.com/gh/nestjs/nest
+[circleci-image]: https://img.shields.io/circleci/build/github/nestjs/nest/master?token=abc123def456
+[circleci-url]: https://circleci.com/gh/nestjs/nest
 
 <p  align="center">A progressive <a  href="http://nodejs.org"  target="_blank">Node.js</a> framework for building efficient and scalable server-side applications.</p>
 <p  align="center">
@@ -23,14 +22,14 @@
 <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
 [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
 
-  
 ## Sumário
-1. [Descrição](#description) 
-2. [Instalação](#install) 
-3. [Executando a API](#running) 
+
+1. [Descrição](#description)
+2. [Instalação](#install)
+3. [Executando a API](#running)
 4. [Banco de dados](#database)
 5. [Endpoints](#endpoints)
-	5.1. [Opportunities](#opportunities) 
+   1. [Opportunities](#opportunities)
 6. [License](#license)
 
 ## Descrição <a name="description"></a>
@@ -38,6 +37,7 @@
 API desenvolvido em [Nest](https://nestjs.com) para realizar a integração entre as plataformas [Pipedrive](https://www.pipedrive.com/pt) e [Bling](https://www.bling.com.br).
 
 ## Instalação <a name="install"></a>
+
 ```bash
 
 $ npm install
@@ -50,11 +50,11 @@ $ npm install
 
 # development
 $ npm run start
-  
+
 
 # watch mode
 $ npm run start:dev
- 
+
 
 # production mode
 $ npm run start:prod
@@ -62,6 +62,7 @@ $ npm run start:prod
 ```
 
 ## Banco de dados <a name="database"></a>
+
 - Banco de dados: MongoDB
 - Local: MongoDB Atlas
 - ODM: Mongoose
@@ -75,7 +76,8 @@ $ npm run start:prod
 **Descrição:** Retorna todos as oportunidades cadastradas no banco.
 
 **Response**:
-200 *Lista de oportunidades*
+200 _Lista de oportunidades_
+
 ```JSON
 [
   {
@@ -112,7 +114,7 @@ $ npm run start:prod
 **Descrição:** Realiza a busca de negócios ganhos na plataforma Pipedrive, persiste no banco e criar um novo pedido na plataforma Bling.
 
 **Response**:
-200 *No body*
+200 _No body_
 
 ## License <a name="license"></a>
 
