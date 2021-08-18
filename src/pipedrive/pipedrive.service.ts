@@ -1,7 +1,6 @@
 import { HttpService } from '@nestjs/axios';
 import { Injectable } from '@nestjs/common';
-import { map, Observable } from 'rxjs';
-import { AxiosResponse } from 'axios';
+import { map } from 'rxjs';
 import { ConfigService } from '@nestjs/config';
 
 @Injectable()
@@ -18,13 +17,15 @@ export class PipedriveService {
     this.url = `https://${companyDomain}.pipedrive.com/api/v1/`;
   }
 
-  getDeals(): Observable<AxiosResponse<any>> {
+  getDealsWons(): Promise<any> {
     return this.httpService
       .get(`${this.url}/deals`, {
         params: {
           api_token: this.configService.get<string>('PIPEDRIVE_API_TOKEN'),
+          status: 'won',
         },
       })
-      .pipe(map((response) => response.data));
+      .pipe(map((response) => response.data.data))
+      .toPromise();
   }
 }
