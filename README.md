@@ -29,7 +29,9 @@
 2. [Instalação](#install) 
 3. [Executando a API](#running) 
 4. [Banco de dados](#database)
-5. [License](#license)
+5. [Endpoints](#endpoints)
+	5.1. [Opportunities](#opportunities) 
+6. [License](#license)
 
 ## Descrição <a name="description"></a>
 
@@ -101,8 +103,7 @@ $ npm run start:prod
     "createdAt": "2021-08-18 18:51:27.575",
     "updatedAt": "2021-08-18 19:25:10.089",
     "__v": 1
-  },
-  [...]
+  }
 ]
 ```
 
